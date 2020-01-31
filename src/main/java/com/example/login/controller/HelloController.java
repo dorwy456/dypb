@@ -25,7 +25,7 @@ public class HelloController {
 	@RequestMapping("/login.do")
 	public String home(Model model) throws Exception {
 		List<User> result = loginService.getAll();
-		model.addAttribute("message", "hello w22323orld");
+		model.addAttribute("message", "Login Success!");
 		return model.getAttribute("message").toString();
 	}   
 
